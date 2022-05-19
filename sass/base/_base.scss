@@ -1,0 +1,36 @@
+html{
+    font-size: 10px;
+   }
+   
+   body{
+    font-size:1.8rem;
+    font-family:'Merriweather', Verdana, sans-serif;
+   }
+   
+   h1{
+
+    font-style: Bold;
+    font-size: 60px;
+    line-height: 120px;
+   }
+
+   h2{
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 80px;
+    color: $color-brand;
+   }
+
+   h3{
+    font-style: Bold;
+    font-size: 28px;
+    line-height: 56px;
+   }
+
+   h4{
+    font-family: 'Inter', Verdana, sans-serif;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 40px;
+    color: $color-text;
+   }

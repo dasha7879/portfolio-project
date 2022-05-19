@@ -1,0 +1,17 @@
+.navigation{
+    color: $color-text;
+    display: flex;
+    font-size: 2.0rem;
+    line-height: 5.0rem;
+}
+
+.navigation__link{
+    list-style:none;
+    padding: 0 15px;
+    cursor: pointer;
+    
+}
+
+.navigation__link:hover{
+    color: $color-brand;
+}

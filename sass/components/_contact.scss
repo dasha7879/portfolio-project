@@ -1,0 +1,15 @@
+.contact__wrapper{
+    background:url("../images/bg_form.jpg");
+
+}
+
+.contact{
+    color: $color-text;
+}
+
+
+.contact__form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
