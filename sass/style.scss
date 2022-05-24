@@ -1,7 +1,14 @@
 @import "../node_modules/normalize.scss/normalize.scss";
+
+//abstract
 @import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholder";
+
+//base
 @import "base/base";
 @import "base/buttons";
+@import "base/icons";
 
 //layouts
 @import "layouts/wrapper";
@@ -9,12 +16,13 @@
 @import "layouts/languages";
 @import "layouts/navigations";
 @import "layouts/footer";
+@import "layouts/columns";
 
 
 //components
-@import "components/contact";
-@import "components/portfolio";
 @import "components/promo";
-@import "components/price";
 @import "components/skills";
-
+@import "components/portfolio";
+@import "components/video";
+@import "components/price";
+@import "components/contact";

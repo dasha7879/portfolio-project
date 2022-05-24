@@ -3,34 +3,31 @@ html{
    }
    
    body{
-    font-size:1.8rem;
-    font-family:'Merriweather', Verdana, sans-serif;
+    @extend %font-primary;
+    @include font($size: 1.8rem, $height: 3.6rem, $weight: normal);
+    background: $color-background;
    }
    
    h1{
-
-    font-style: Bold;
-    font-size: 60px;
-    line-height: 120px;
+    @extend %font-add;
+    @include font ($size: 6rem, $height: 12rem);
    }
 
    h2{
-    font-style: Bold;
-    font-size: 40px;
-    line-height: 80px;
     color: $color-brand;
+    margin: 0px;
+    @include font ($size: 4rem, $height: 8rem);
+    position:absolute;
+    background: $color-background;
+    padding:0 50px;
    }
 
    h3{
-    font-style: Bold;
-    font-size: 28px;
-    line-height: 56px;
+    @include font ($size: 2.8rem, $height: 5.6rem);
    }
 
    h4{
-    font-family: 'Inter', Verdana, sans-serif;
-    font-style: Bold;
-    font-size: 20px;
-    line-height: 40px;
+    @extend %font-add;
     color: $color-text;
+    @include font ($size: 2rem, $height: 4rem);
    }

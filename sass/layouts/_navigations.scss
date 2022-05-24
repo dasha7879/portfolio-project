@@ -1,17 +1,16 @@
 .navigation{
     color: $color-text;
     display: flex;
-    font-size: 2.0rem;
-    line-height: 5.0rem;
+    @include font($size:2rem, $height:5rem, $weight:normal);
 }
 
 .navigation__link{
     list-style:none;
     padding: 0 15px;
     cursor: pointer;
+    &:hover{
+        color: $color-brand;
+    }
     
 }
 
-.navigation__link:hover{
-    color: $color-brand;
-}

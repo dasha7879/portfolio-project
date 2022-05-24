@@ -1,3 +1,36 @@
 .footer__wrapper{
     background: $color-background;
+    @include columns ($width:30%);
+
 }
+
+.footer__text{
+    color: $color-text;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+
+.symbol__footer{
+    padding: 65px 0px;
+    color: $color-text;
+}
+
+.footer__text_symb{
+    margin:20px;
+}
+
+
+
+.social-media_a{
+    width: 25px;
+    height: 25px;
+    margin: 61px 14px ;
+}
+
+.social-media{
+    justify-content: end;
+    display: flex;
+}
+
+

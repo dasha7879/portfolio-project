@@ -1,0 +1,22 @@
+@mixin font ($size, $height, $weight: bold) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+}
+
+@mixin wrap ($width:1400px, $margin: auto){
+    max-width: $width;
+    margin: $margin;
+}
+
+@mixin columns($width) {
+    display: flex;
+    justify-content: space-between;
+    >*{
+        flex-basis:$width;
+        flex-wrap: wrap;
+    }
+}
+
+
+
