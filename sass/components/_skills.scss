@@ -13,22 +13,4 @@
     align-items: center;
 }
 
-.skill-title{
-    // margin: 50px 0 0 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-   
 
-}
-
-.skill-title::before{
-//    @extend %line-decoration;
-   content:'';
-   display: block;
-   width:700px;
-   height:4px;
-   background-color: $color-brand;
-   position: absolute;
-   top:calc(50% - 2px);
-}

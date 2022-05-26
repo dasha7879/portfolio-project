@@ -1,6 +1,4 @@
-.price__title{
-    color: $color-text;
-}
+
 
 .price__package{
     color: $color-brand;
@@ -20,11 +18,15 @@
 }
 
 .price__button{
-    margin: 43px;
+    margin: 40px 0 43px 0 ;
 
     
 }
 
 .price__content{
     border: $color-brand solid 3px;
+}
+
+.title-decoration_price{
+    margin-top: 0;
 }

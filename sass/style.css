@@ -396,11 +396,16 @@ th {
   padding: 0;
 }
 
-.button, body {
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 100px;
+  }
+}
+.button, p, body {
   font-family: "Inter", Verdana, sans-serif;
 }
 
-.price__package, .promo__text, h4, h1 {
+.price__package, .promo__text, h4, h3, h2, h1 {
   font-family: "Merriweather", Verdana, sans-serif;
 }
 
@@ -423,19 +428,20 @@ h1 {
 
 h2 {
   color: #BDAE82;
-  margin: 0px;
+  display: block;
+  margin-top: -39px;
   font-size: 4rem;
   line-height: 8rem;
   font-weight: bold;
-  position: absolute;
   background: #000000;
-  padding: 0 50px;
+  padding: 0 20px;
 }
 
 h3 {
   font-size: 2.8rem;
   line-height: 5.6rem;
   font-weight: bold;
+  color: #ffffff;
 }
 
 h4 {
@@ -445,14 +451,19 @@ h4 {
   font-weight: bold;
 }
 
+p {
+  font-size: 20px;
+}
+
 .button {
-  padding: 8px 72px 7px 73px;
   font-size: 2rem;
   line-height: 4rem;
   font-weight: normal;
   border: 2px solid #BDAE82;
   cursor: pointer;
   transition: all 0.3s;
+  width: 220px;
+  height: 55px;
 }
 .button_colored {
   background: #BDAE82;
@@ -461,6 +472,7 @@ h4 {
 .button_bordered {
   background: #000000;
   color: #BDAE82;
+  margin-left: 5px;
 }
 .button_bordered:hover {
   background: #BDAE82;
@@ -470,6 +482,11 @@ h4 {
 .wrapper {
   max-width: 1400px;
   margin: auto;
+}
+@media (max-width: 320px) {
+  .wrapper {
+    padding: 0 60px;
+  }
 }
 
 .container__wrapper {
@@ -595,6 +612,23 @@ h4 {
   flex-wrap: wrap;
 }
 
+.title-decoration {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  margin-top: 130px;
+}
+
+.title-decoration span {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #BDAE82;
+  margin: 0 20% 0 20%;
+}
+
 .promo__wrapper {
   display: block;
 }
@@ -634,22 +668,6 @@ h4 {
   align-items: center;
 }
 
-.skill-title {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.skill-title::before {
-  content: "";
-  display: block;
-  width: 700px;
-  height: 4px;
-  background-color: #BDAE82;
-  position: absolute;
-  top: calc(50% - 2px);
-}
-
 .portfolio__button > button {
   margin-right: 5px;
 }
@@ -660,11 +678,19 @@ h4 {
 
 .portfolio__button {
   text-align: center;
-  padding: 60px 0px;
+  padding: 0 0 60px 0;
 }
 
-.price__title {
-  color: #ffffff;
+.video {
+  position: relative;
+  z-index: 1;
+}
+
+.play-hover {
+  position: relative;
+  z-index: 2;
+  top: -410px;
+  left: 636px;
 }
 
 .price__package {
@@ -684,25 +710,80 @@ h4 {
 }
 
 .price__button {
-  margin: 43px;
+  margin: 40px 0 43px 0;
 }
 
 .price__content {
   border: #BDAE82 solid 3px;
 }
 
+.title-decoration_price {
+  margin-top: 0;
+}
+
 .contact__wrapper {
   background: url("../images/bg_form.jpg");
+  min-height: 700px;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+}
+
+.contact-title-box {
+  text-align: right;
+  padding-right: 244px;
+  padding-top: 80px;
+}
+
+.contact-title {
+  color: #BDAE82;
+  background: none;
 }
 
 .contact {
-  color: #ffffff;
+  padding: 117px 0 0 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 
 .contact__form {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  min-width: 450px;
+}
+.contact__form input, .contact__form textarea {
+  border: 1px #BDAE82 solid;
+  background: none;
+  padding: 5px 20px;
+  margin: 0 0 20px 0;
+  width: 450px;
+  resize: none;
+  color: #BDAE82;
+}
+
+textarea {
+  width: 100px;
+}
+
+input {
+  height: 50px;
+}
+
+textarea::placeholder {
+  color: #BDAE82;
+}
+
+input::placeholder {
+  color: #BDAE82;
+}
+
+.contact-button {
+  margin: 20px 87px 0 0;
+}
+.contact-button .button_colored {
+  position: relative;
+  right: 183px;
 }
 
 /*# sourceMappingURL=style.css.map */

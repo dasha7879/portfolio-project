@@ -1,15 +1,66 @@
 .contact__wrapper{
     background:url("../images/bg_form.jpg");
-
+    min-height: 700px;
+    max-width: 1440px;;
+    background-repeat:no-repeat;
 }
 
+.contact-title-box{
+    text-align: right;
+    padding-right: 244px;
+    padding-top: 80px;
+}
+
+.contact-title{
+    color: $color-brand;
+    background:none;
+    // padding:60px 0 40px 0;
+}
 .contact{
-    color: $color-text;
+    padding: 117px 0 0 0;
 }
 
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
 
 .contact__form{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    min-width: 450px;
+    input,textarea{
+        border: 1px $color-brand solid;
+        background:none;
+        padding: 5px 20px;
+        margin: 0 0 20px 0;
+        width: 450px;
+        resize: none;
+        color:$color-brand;
+    }
 }
+
+textarea{
+    width: 100px;
+}
+input{
+    height:50px;
+}
+
+textarea::placeholder{
+    color: $color-brand
+}
+
+input::placeholder{
+    color:$color-brand;
+}
+
+
+.contact-button{
+    margin:20px 87px 0 0;
+    .button_colored{
+        position: relative;
+        right: 183px;
+    }
+}
+
+

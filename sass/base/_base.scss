@@ -15,19 +15,28 @@ html{
 
    h2{
     color: $color-brand;
-    margin: 0px;
+    display: block;
+    margin-top: -39px;
     @include font ($size: 4rem, $height: 8rem);
-    position:absolute;
+    @extend %font-add;
     background: $color-background;
-    padding:0 50px;
+    padding:  0 20px;
    }
 
+
    h3{
+    @extend %font-add;
     @include font ($size: 2.8rem, $height: 5.6rem);
+    color: $color-text;
    }
 
    h4{
     @extend %font-add;
     color: $color-text;
     @include font ($size: 2rem, $height: 4rem);
+   }
+
+   p{
+    @extend %font-primary;
+    font-size: 20px;
    }
