@@ -5,22 +5,36 @@
     background-repeat:no-repeat;
 }
 
+.contact-container{
+    @include media-tablet{
+            display:flex;
+            flex-flow: column;
+            align-items: center;
+    }
+}
+
 .contact-title-box{
     text-align: right;
     padding-right: 244px;
     padding-top: 80px;
+    @include media-tablet{
+        text-align: 0px;
+        padding-right: 0px;
+    }
 }
 
 .contact-title{
     color: $color-brand;
     background:none;
-    // padding:60px 0 40px 0;
+    @include media-tablet{
+        @include font ($size: 3.2rem, $height: 6rem); 
+    }
 }
 .contact{
     padding: 117px 0 0 0;
 }
 
-.box{
+.input{
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -36,12 +50,18 @@
         width: 450px;
         resize: none;
         color:$color-brand;
+        @include media-tablet{
+            background:#00000080;
+        
+        }
     }
+
 }
 
 textarea{
     width: 100px;
 }
+
 input{
     height:50px;
 }
@@ -56,10 +76,13 @@ input::placeholder{
 
 
 .contact-button{
-    margin:20px 87px 0 0;
+    margin:20px 271px 0 0;
     .button_colored{
-        position: relative;
         right: 183px;
+    }
+    @include media-tablet{
+        margin: auto;
+        right: 0px;
     }
 }
 

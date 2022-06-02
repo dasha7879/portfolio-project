@@ -1,9 +1,16 @@
 .container__wrapper{
       background:url("../images/bg.jpg");
-    //   height: 100vh;
       background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      @include media-tablet{
+          background-repeat: no-repeat;
+      background-size: inherit;
+      }
     
 }
+
+
 
 .header{
     padding:20px, 0px, 20px, 0px;
@@ -16,7 +23,7 @@
 }
 
 .logo{
-    padding: 20px;
+    padding:25px 0 0 60px;
     width: 50px;
     height:40px;
     align-self: flex-start;
@@ -25,6 +32,15 @@
 .header__lang-navigation * {
     display: inline-block;
 }
+
+.header__lang{
+    @include media-tablet{
+        margin-left: 393px;
+    }
+}
+
+
+
 
 
 

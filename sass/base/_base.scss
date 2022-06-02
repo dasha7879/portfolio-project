@@ -11,6 +11,9 @@ html{
    h1{
     @extend %font-add;
     @include font ($size: 6rem, $height: 12rem);
+    @include media-tablet{
+        @include font ($size: 3.2rem, $height: 6.4rem); 
+    }
    }
 
    h2{
@@ -21,6 +24,10 @@ html{
     @extend %font-add;
     background: $color-background;
     padding:  0 20px;
+    @include media-tablet{
+        @include font ($size: 3.2rem, $height: 4rem);
+        margin-top: -23px; 
+    }
    }
 
 

@@ -1,4 +1,16 @@
+.price-box{
+    @include media-tablet{
+        width: 100%;
+    }  
+}
 
+.price-container{
+@include media-tablet{
+    flex-direction:column;
+    width:420px;
+    margin: auto;
+}
+}
 
 .price__package{
     color: $color-brand;
@@ -10,11 +22,16 @@
 .price__text{
     color: $color-text;
     list-style:none;
+    padding:0;
 }
 
 
 .price__content{
     text-align: center;
+    border: $color-brand solid 3px;
+    @include media-tablet{
+        margin: 0 0 50px 0;
+    }
 }
 
 .price__button{
@@ -23,9 +40,6 @@
     
 }
 
-.price__content{
-    border: $color-brand solid 3px;
-}
 
 .title-decoration_price{
     margin-top: 0;
