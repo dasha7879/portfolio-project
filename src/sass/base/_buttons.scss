@@ -1,0 +1,27 @@
+.button{
+    @extend %font-primary;
+    @include font($size:2rem, $height:4rem, $weight:normal);
+    border:2px solid $color-brand;
+    cursor: pointer;
+    transition: all .3s;
+    width: 220px;
+    height: 55px;
+    &_colored{
+        background:$color-brand;
+        color: $color-background;
+    }
+    &_bordered{
+        background: $color-background;
+        color:$color-brand;
+        margin-left:5px;
+        @include media-tablet{
+            margin: 0 0 5px 5px;
+        }
+        &:hover{
+            background:$color-brand;
+            color:$color-background;
+        }
+    }
+    
+}
+

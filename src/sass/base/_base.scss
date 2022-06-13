@@ -1,0 +1,49 @@
+html{
+    font-size: 10px;
+   }
+   
+   body{
+    @extend %font-primary;
+    @include font($size: 1.8rem, $height: 3.6rem, $weight: normal);
+    background: $color-background;
+   }
+   
+   h1{
+    @extend %font-add;
+    @include font ($size: 6rem, $height: 12rem);
+    @include media-tablet{
+        @include font ($size: 3.2rem, $height: 6.4rem); 
+    }
+   }
+
+   h2{
+    color: $color-brand;
+    display: block;
+    margin-top: -39px;
+    @include font ($size: 4rem, $height: 8rem);
+    @extend %font-add;
+    background: $color-background;
+    padding:  0 20px;
+    @include media-tablet{
+        @include font ($size: 3.2rem, $height: 4rem);
+        margin-top: -23px; 
+    }
+   }
+
+
+   h3{
+    @extend %font-add;
+    @include font ($size: 2.8rem, $height: 5.6rem);
+    color: $color-text;
+   }
+
+   h4{
+    @extend %font-add;
+    color: $color-text;
+    @include font ($size: 2rem, $height: 4rem);
+   }
+
+   p{
+    @extend %font-primary;
+    font-size: 20px;
+   }
