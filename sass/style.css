@@ -538,7 +538,12 @@ p {
   padding: 0 15px;
   cursor: pointer;
 }
-.navigation__link:hover {
+
+.links {
+  text-decoration: none;
+  color: #ffffff;
+}
+.links:hover {
   color: #BDAE82;
 }
 
